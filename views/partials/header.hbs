@@ -1,0 +1,24 @@
+<nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Inventory System Main Menue</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="inventory">Inventory<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="addItem">Add Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        <form action ="/searchResults" class="form-inline my-2 my-md-0" enctype="multipart/form-data" method="get">
+            <input class="form-control" type="text" placeholder="Search" id="searchString" name="searchString">
+            <button class="btn btn-success pull-right" type="submit">Find Item</button>
+        </form>
+      </div>
+</nav>

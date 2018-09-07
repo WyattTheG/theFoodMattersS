@@ -1,0 +1,34 @@
+<div class='container-fluid'>
+  <form action="/addItem"  enctype="multipart/form-data" method="post" class="form-container">
+            <div class="form-group">
+                <label for="name">Item Name</label>
+                <input type="text" id="name" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="description">description (Category)</label>
+                <input type="text" id="description" name="description" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="dimensions">Dimensions</label>
+                <input type="text" id="dimensions" name="dimensions" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="color">Color</label>
+                <input type="text" id="color" name="color" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="numberOf">Number of Item</label>
+                <input type="text" id="numberOf" name="numberOf" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo File</label>
+                <input type="file" id="photo" name="photo" class="form-control" onchange="document.getElementById('fileName').value = this.value.split('\\').pop().split('/').pop()"/>
+                <input type="hidden" name="fileName" id="fileName">
+            </div>
+            <button type="submit">Create Item</button>
+  </form>
+</div>
